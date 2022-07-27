@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Basement Grotesque'
+}
+
+
+@font-face {
+  font-family: 'Basement Grotesque';
+  src: url('../src/fonts/basement-grotesqueRegularRegular.woff2') format('woff2'),
+      url('../src/fonts/basement-grotesqueRegularRegular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+.loading{
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.circle{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: none;
+  border: 2px solid #fff;
+  text-align: center;
+  position: relative;
+}
+
+.count{
+  position: absolute;
+}
+
+.bar{
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 78%;
+  left: 10%;
+  width: 500px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.bar-charge{
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+}
